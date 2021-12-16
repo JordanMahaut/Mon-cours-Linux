@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon cours Linux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mon cours sur Linux</h1>
+
+    <section>
+        <h2>Installation de Linux</h2>
+        <ul>
+            <li>Allez dans Microsoft store</li>
+            <li>Tapez "Ubuntu" et installer</li>
+            <li>Une fois installer, redémarrer le pc puis connecter vous.</li>
+        </ul>
+    </section>
+
+    <section>
+        <H2>Les commandes Linux</h2>
+        <table>
+            <thead id="green">
+                <tr>
+                    <th>Commande</th>
+                    <th>Signification</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Commande pwd</th>
+                    <th>Utilisez la commande pwd pour trouver le chemin du répertoire de travail (dossier) dans lequel vous êtes actuellement. La commande retournera un chemin absolu (complet), qui est en fait un chemin de tous les répertoires qui commence par une barre oblique (/). Un exemple de chemin absolu est /home/utilisateur.</th>
+                </tr>
+
+                <tr>
+                    <th>Commande cd</th>
+                    <th>Pour naviguer dans les fichiers et répertoires de Linux, utilisez la commande cd. Elle nécessite soit le chemin d’accès complet, soit le nom du répertoire, selon le répertoire de travail dans lequel vous vous trouvez. <br>
+                        Disons que vous êtes dans /home/utilisateur/Documents et que vous voulez aller dans Photos, un sous-répertoire de Documents. Pour ce faire, il vous suffit de taper la commande suivante : cd Photos. <br>
+                        Un autre scénario est possible si vous voulez passer à un répertoire complètement nouveau, par exemple, /home/utilisateur/Films. Dans ce cas, vous devez taper cd suivi du chemin absolu du répertoire : cd /home/utilisateur/Films. <br> 
+                        Il existe quelques raccourcis pour vous aider à naviguer rapidement : 
+                        <ul>
+                            <li><strong>cd ..</strong> (avec deux points) pour se déplacer d’un répertoire vers le haut</li>
+                            <li><strong>cd</strong> pour aller directement au dossier principal (home)</li>
+                            <li><strong>cd-</strong>(avec un tiret) pour passer à votre répertoire précédent</li>
+                        </ul>
+                        Par ailleurs, le shell de Linux est sensible à la casse. Vous devez donc taper les noms des répertoires exactement comme ils sont.
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Commande ls</th>
+                    <th>
+                        La commande <strong>ls</strong> est utilisée pour visualiser le contenu d’un répertoire. Par défaut, cette commande affichera le contenu de votre répertoire de travail actuel. <br>
+                        Si vous voulez voir le contenu d’autres répertoires, tapez <strong>ls</strong> et ensuite le chemin d’accès du répertoire. Par exemple, tapez <strong>ls</strong> <strong>/home/utilisateur/Documents</strong> pour voir le contenu de <strong>Document</strong>. <br>
+                        Il existe des variantes que vous pouvez utiliser avec la commande <strong>ls</strong> :
+                        <ul>
+                            <li><strong>ls -R</strong> énumérera également tous les fichiers dans les sous-répertoires</li>
+                            <li><strong>ls -a</strong> affichera les fichiers cachés</li>
+                            <li><strong>ls -al</strong> listera les fichiers et les répertoires avec des informations détaillées comme les autorisations, la taille, le propriétaire, etc.</li>
+                        </ul>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Commande mkdir</th>
+                    <th>
+                        Utilisez la commande mkdir pour créer un nouveau répertoire – si vous tapez mkdir Music, cela créera un répertoire appelé Music. <br>
+                        Il existe également des commandes mkdir supplémentaires :
+                        <ul>
+                            <li>Pour générer un nouveau répertoire à l’intérieur d’un autre répertoire, utilisez cette commande de base de Linux mkdir Music/Nouveau</li>
+                            <li>Utiliser l’option p (parents) pour créer un répertoire entre deux répertoires existants. Par exemple, mkdir -p Musique/2020/Nouveau créera le nouveau répertoire "2020" .</li>
+                        </ul>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Commande rm</th>
+                    <th>
+                        La commande rm est utilisée pour supprimer les répertoires et leur contenu. Si vous voulez seulement supprimer le répertoire – comme alternative à rmdir – utilisez rm -r. <br>
+                        Note : Soyez très prudent avec cette commande et vérifiez à nouveau dans quel répertoire vous vous trouvez. Cela effacera tout et il n’y aura pas d’annulation.
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Commande touch</th>
+                    <th>La commande touch vous permet de créer un nouveau fichier vierge via la ligne de commande Linux. Par exemple, entrez touch /home/username/Documents/Web.html pour créer un fichier HTML intitulé Web dans le répertoire Documents.</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

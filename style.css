@@ -1,0 +1,10 @@
+table, th, thead, tr, tbody{
+    border:1px solid blue;
+    width:"50%";
+}
+#green{
+    color: green;
+}
+body{
+    background-color: blanchedalmond;
+}
